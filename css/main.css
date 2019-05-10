@@ -1,0 +1,37 @@
+body,html{
+    margin:0px;
+    padding;0px;
+    text-align: center;
+    background-image: url('../images/33.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+.page-header{
+    padding:10px;
+}
+
+.login-div{
+   background-color:white;
+    opacity:0.9;
+    margin-top:5%;
+    border-radius: 10px;
+    width:800px;
+    height:400px;
+    padding:20px;
+    transition:0.3s;
+    border:2px solid #5cb85c;
+}
+
+
+
+.login-div:hover{
+        background-color:#5cb85c;
+    color:white;
+}
+
+.login-div input{
+    height:45px;
+     border:1px solid #5cb85c;
+}

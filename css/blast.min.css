@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FEFBFD;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.blast-box {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    bottom: 0;
+    right: -260px;
+    color: #3C8137;
+    z-index: 9999;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+.blast-icon {
+    position: absolute;
+    width: 40px;
+    line-height: 40px;
+    right: 260px;
+    top: -50%;
+    color: #eee;
+    background: #000000;
+    text-align: center;
+    cursor: pointer;
+    perspective: 1000px;
+    transition: 0.5s ease all;
+    transform-origin: right;
+    transition-delay: 0.5s;
+    z-index: 9999;
+    font-size: 1.4em;
+}
+
+.blast-icon i {
+    -webkit-animation: fa-spin 5s infinite linear;
+    -moz-animation: fa-spin 5s infinite linear;
+    -ms-animation: fa-spin 5s infinite linear;
+    -o-animation: fa-spin 5s infinite linear;
+    animation: fa-spin 5s infinite linear;
+}
+
+.blast-box .blast-frame {
+    position: absolute;
+    width: calc(100% - 40px);
+    top: -70%;
+    right: 0px;
+    background: #080808;
+    text-align: center;
+    padding: 2em 1em;
+}
+
+.blast-frame p {
+    color: #fff;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    line-height: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.blast-box .blast-color {
+    position: relative;
+    margin: 2px;
+    height: 25px;
+    width: 25px;
+    max-height: 25px;
+    max-width: 25px;
+    background: black;
+    color: transparent;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.blast-box .blast-custom-colors {
+    margin-top: 20px;
+}
+
+.blast-box input[name="blastCustomColor"] {
+    margin-top: 5px;
+    cursor: pointer;
+    height: 30px;
+    width: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.appear-it {
+    right: 0
+}
+
+.flip-it {
+    transform: rotateY(180deg);
+    border-left: none;
+    background: #5d5b5b;
+}
